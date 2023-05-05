@@ -1,0 +1,13 @@
+.app-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Exo 2";
+  font-size: 20px;
+}
+
+.app-header-name {
+  font-family: "Roboto";
+}
