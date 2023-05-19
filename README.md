@@ -11,6 +11,7 @@ In order to start the challenge, please do the following:
 
 1. Clone this repo;
 2. Run `yarn` or `npm install` depending on your preference (note: we've created it using `yarn`, hence the `yarn.lock` file);
+   - NOTE: The `yarn.lock` file is in the yarn lockfile v1 format. To prevent potential issues with differing yarn versions, decided to first run `yarn set version classic` so the latest classic yarn version is used. 
 3. Run `yarn start` or `npm start` to run the project and check that you see the following page:
    ![image](./images/initial.png)
 4. This will be the base you will use for the challenge. Don't forget to read the rest of the README.md file carefully before you start :rocket:
