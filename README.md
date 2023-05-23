@@ -11,7 +11,6 @@ In order to start the challenge, please do the following:
 
 1. Clone this repo;
 2. Run `yarn` or `npm install` depending on your preference (note: we've created it using `yarn`, hence the `yarn.lock` file);
-   - NOTE: The `yarn.lock` file is in the yarn lockfile v1 format. To prevent potential issues with differing yarn versions, decided to first run `yarn set version classic` so the latest classic yarn version is used. 
 3. Run `yarn start` or `npm start` to run the project and check that you see the following page:
    ![image](./images/initial.png)
 4. This will be the base you will use for the challenge. Don't forget to read the rest of the README.md file carefully before you start :rocket:
@@ -92,3 +91,15 @@ When the user clicks on the purchase button for each project, it should change i
 ### Design
 
 ![image](./images/tech-challenge-ex-2.png)
+
+### Decision Notes (wkyoshida)
+   - The `yarn.lock` file is in the yarn lockfile v1 format. To prevent potential issues with differing yarn versions amongst team members, decided to first run `yarn set version classic` so that the latest classic yarn version is used.
+   - To fetch the project data, an implementation with async/await calls instead would be preferable. [axios](https://github.com/axios/axios) is an option that could help facilitate an async/await implementation.
+   - [react-i18next](https://github.com/i18next/react-i18next) was used for internationalization. Added some i18n resources within the code as examples; however, as i18n resources grow in size and languages, they can be moved out, e.g. in individual `public/locales/<language_code>/translation.json`s. i18n can free up text from being hard-coded and provide a more dynamic experience for global users.
+   - Tests should be added - especially if further long-term development is planned for the project. Tests can help with maintaining the project as expected functionality can be continuously tested. Running tests can be made simpler by leveraging a continuous-integration platform, such as [GitHub Actions](https://docs.github.com/en/actions).
+   - Reading environment variables was also done to allow for project configuration, e.g. the datasource url is not hard-coded to the codebase and can be more easily modified if needed.
+   - To find the correct colors for the `Purchase` button, a handy public [color tool](https://html-color-codes.info/colors-from-image/) was used that identifies color codes of pixels within in an image.
+   - Hover behaviours were added to the project cards and `Purchase` buttons to add some experience of interactivity for the user. 
+   - One future feature idea could be to add different sorting options, e.g. by start date (ascending), by credits (ascending), by credits (descending), etc. 
+   - Leveraging locales can further create a more dynamic experience for global users. For instance, `"en-GB"` was used to achieve a `day month year` format for the project start dates. However, allowing locales to provide a more contextually-appropriate format for individual users could be another approach. This consideration is also why an implementation to add the suffixes for days, i.e. `"th"` for `"20th"`, was not done at this time.
+   
