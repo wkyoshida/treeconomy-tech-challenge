@@ -1,0 +1,27 @@
+.project-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.project-grid-title {
+  margin: auto;
+  height: 75px;
+  width: 70%;
+  font-family: "Exo 2";
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.project-grid-gallery {
+  display: flex;
+  margin: auto;
+  width: 70%;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
