@@ -93,6 +93,7 @@ When the user clicks on the purchase button for each project, it should change i
 ![image](./images/tech-challenge-ex-2.png)
 
 ### Decision Notes (wkyoshida)
+   - The submission for the challenge is under the commits up to the tag [`challenge-submission`](https://github.com/wkyoshida/treeconomy-tech-challenge/releases/tag/challenge-submission). Newer commits are updates made for fun.
    - The `yarn.lock` file is in the yarn lockfile v1 format. To prevent potential issues with differing yarn versions amongst team members, decided to first run `yarn set version classic` so that the latest classic yarn version is used.
    - [react-i18next](https://github.com/i18next/react-i18next) was used for internationalization. Added some i18n resources within the code as examples; however, as i18n resources grow in size and languages, they can be moved out, e.g. in individual `public/locales/<language_code>/translation.json`s. i18n can free up text from being hard-coded and provide a more dynamic experience for global users.
    - Tests should be added - especially if further long-term development is planned for the project. Tests can help with maintaining the project as expected functionality can be continuously tested. Running tests can be made simpler by leveraging a continuous-integration platform, such as [GitHub Actions](https://docs.github.com/en/actions).
