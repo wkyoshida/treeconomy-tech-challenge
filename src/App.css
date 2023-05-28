@@ -8,3 +8,10 @@
   font-size: 50px;
   font-weight: bold;
 }
+
+.util-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+}

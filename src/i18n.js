@@ -7,6 +7,8 @@ const resources = {
     translation: {
       "credits": "credits",
       "projectList": "project list",
+      "projectsError": "error getting project list",
+      "projectsLoading": "loading projects...",
       "purchase": "purchase",
       "purchased": "purchased",
     }
@@ -15,6 +17,8 @@ const resources = {
     translation: {
       "credits": "créditos",
       "projectList": "projetos",
+      "projectsError": "erro ao carregar os projetos",
+      "projectsLoading": "carregando projetos...",
       "purchase": "comprar",
       "purchased": "comprado",
     }

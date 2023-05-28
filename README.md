@@ -94,7 +94,6 @@ When the user clicks on the purchase button for each project, it should change i
 
 ### Decision Notes (wkyoshida)
    - The `yarn.lock` file is in the yarn lockfile v1 format. To prevent potential issues with differing yarn versions amongst team members, decided to first run `yarn set version classic` so that the latest classic yarn version is used.
-   - To fetch the project data, an implementation with async/await calls instead would be preferable. [axios](https://github.com/axios/axios) is an option that could help facilitate an async/await implementation.
    - [react-i18next](https://github.com/i18next/react-i18next) was used for internationalization. Added some i18n resources within the code as examples; however, as i18n resources grow in size and languages, they can be moved out, e.g. in individual `public/locales/<language_code>/translation.json`s. i18n can free up text from being hard-coded and provide a more dynamic experience for global users.
    - Tests should be added - especially if further long-term development is planned for the project. Tests can help with maintaining the project as expected functionality can be continuously tested. Running tests can be made simpler by leveraging a continuous-integration platform, such as [GitHub Actions](https://docs.github.com/en/actions).
    - Reading environment variables was also done to allow for project configuration, e.g. the datasource url is not hard-coded to the codebase and can be more easily modified if needed.
